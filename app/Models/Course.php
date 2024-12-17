@@ -13,7 +13,4 @@ class Course extends Model
         'name', 'description'
     ];
 
-    public function categories() {
-        return $this->belongsToMany(CourseCategory::class, 'course_category_pivot', 'course_id', 'course_category_id');
-    }
 }
